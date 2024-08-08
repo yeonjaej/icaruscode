@@ -1,0 +1,10 @@
+BEGIN_PROLOG
+
+SignalNtuple:
+{
+  module_type:               "signalntuple"
+}
+
+
+END_PROLOG
+

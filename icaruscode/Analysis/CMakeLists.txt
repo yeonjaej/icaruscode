@@ -50,6 +50,8 @@ cet_build_plugin(TPCPurityMonitor art::module LIBRARIES ${MODULE_LIBRARIES})
 set_property(SOURCE TPCPurityMonitor_module.cc APPEND PROPERTY COMPILE_DEFINITIONS EIGEN_FFTW_DEFAULT)
 cet_build_plugin(ThroughgoingmuonAnalyzer art::module LIBRARIES ${MODULE_LIBRARIES})
 set_property(SOURCE ThroughgoingmuonAnalyzer_module.cc APPEND PROPERTY COMPILE_DEFINITIONS EIGEN_FFTW_DEFAULT)
+cet_build_plugin(signalntuple art::module LIBRARIES ${MODULE_LIBRARIES})
+set_property(SOURCE signalntuple_module.cc APPEND PROPERTY COMPILE_DEFINITIONS EIGEN_FFTW_DEFAULT)
 cet_build_plugin(TrackHitAna art::module LIBRARIES ${MODULE_LIBRARIES})
 cet_build_plugin(WireAna art::module LIBRARIES ${MODULE_LIBRARIES})
 

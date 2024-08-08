@@ -1,0 +1,14 @@
+#include "analysis_tools_icarus.fcl"
+
+BEGIN_PROLOG
+
+icarus_RawDigitAnalysis:
+{
+  module_type:               "RawDigitAna"
+  RawDigitModuleLabel:       ["rawdigitfilter"]
+  RawDigitHistogramToolList: [ @local::RawDigitAnalysisTool ]
+}
+
+
+END_PROLOG
+

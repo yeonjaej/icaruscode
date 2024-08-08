@@ -1,0 +1,23 @@
+#include "signalntuple.fcl"
+
+process_name: SignalNtuple
+
+source:
+{
+  module_type: RootInput
+  maxEvents: -1
+}
+services:
+{
+  TFileService: { fileName: "signalntupleoutput.root"}
+}
+
+physics:
+{
+  analyzers:
+  {
+  ana: @local::SignalNtuple
+  }
+  path0: [ana]
+  end_paths: [ path0 ]
+}
